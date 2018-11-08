@@ -15,5 +15,18 @@
   <image class='list-title-line' src='/images/line-black.png'></image>
   <view class='list-title-text'>春季推荐</view>
   <image class='list-title-line' src='/images/line-black.png'></image>
+</view>
+<view class='product-row' wx:for="{{productList}}" wx:key="id" wx:if="{{index%2===1}}">
 
+
+  <navigator class='product-card'>
+    <image class='product-image' src='{{productList[index].image}}' mode='widthFix'></image>
+    <view class='product-name'>{{productList[index].name}}</view>
+    <view class='product-meta'>
+      <view class='product-money'>$</view>
+      <view class='product-price'>{{productList[index].price}}</view>
+      <view class='product-add'>"+"</view>
+    </view>
+
+  </navigator>
 </view>

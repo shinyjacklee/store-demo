@@ -63,3 +63,30 @@
   font-size: 28rpx;
   font-weight: bold;
 }
+
+.temp-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 52rpx 28rpx;
+}
+
+.product-card {
+  flex: 1;
+  background: white;
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+}
+
+.product-card:first-child {
+  margin-right: 27rpx;
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 13rpx 13rpx 0 0;
+}
+
+.product-name {
+  margin: 0 21rpx;
+  font-size: 28rpx;
+  color: rgba(29, 29, 38, 0.8);
+}
